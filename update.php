@@ -29,7 +29,7 @@
                     placeholder="Nome *">
             </div>
             <div class="form-group">
-                <input type="text" value="<?php echo $banco->datnasc ?>" class="form-control" name="datnasc"
+                <input type="date" value="<?php echo $banco->datnasc ?>" class="form-control" name="datnasc"
                     placeholder="Data de Nascimento *">
             </div>
             <div class="form-group">
