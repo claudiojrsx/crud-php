@@ -44,7 +44,7 @@
                     <td><a class="btn btn-link"><?php echo $linha['escola'] ?></td>
                     <td><a class="btn btn-link"><?php echo $linha['sexo'] ?></td>
                     <td><a href="update.php?id=<?php echo $linha['id'] ?>" class="btn btn-warning btn-sm">Alterar</a></td>
-                    <td><a href="#" class="btn btn-danger btn-sm">Excluir</a></a></td>
+                    <td><a href="delete-post.php?id=<?php echo $linha['id'] ?>" class="btn btn-danger btn-sm">Excluir</a></td>
                 </tr>
             <?php endforeach ?>
             </tbody>    

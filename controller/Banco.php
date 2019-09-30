@@ -43,7 +43,15 @@ class Banco {
     }
 
     public function update() {
-        $query = "UPDATE tbalunos SET nome, '" . $this->nome ."' WHERE id = " . $this->id;       
+        $query = "UPDATE tbalunos 
+        SET nome = '" . $this->nome . "', datnasc = '" . $this->datnasc . "', 
+        serie = '" . $this->serie . "', escola = '" . $this->escola . "', sexo = '" . $this->sexo . "' WHERE id = " . $this->id;
+        $conexao = Conexao::usarConexao();
+        $conexao->exec($query);
+    }
+
+    public function delete() {
+        $query = "DELETE FROM tbalunos WHERE id = " . $this->id;
         $conexao = Conexao::usarConexao();
         $conexao->exec($query);
     }

@@ -44,7 +44,7 @@
                 <input type="text" value="<?php echo $banco->sexo ?>" class="form-control" name="sexo"
                     placeholder="Sexo *">
             </div>
-            <button type="submit" class="btn btn-warning" value="Atualizar">Atualizar</button>
+            <input type="submit" class="btn btn-warning" value="Atualizar">
             <a href="index.php" class="btn btn-danger">Voltar</a>
         </form>
     </div>
