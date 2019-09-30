@@ -15,11 +15,11 @@ Desenvolvimento de um simples projeto CRUD (Cadastro de Alunos) utilizando o ace
 - Editar o arquivo **config.php - que se encontra na pasta controller**
 
 ```
+
     define('DB_DRIVE', 'mysql');
     define('DB_HOSTNAME', 'localhost');
     define('DB_DATABASE', 'dbalunos');
     define('DB_USERNAME', 'seuLogin');
     define('DB_PASSWORD', 'suaSenha');
-
 
 ```
