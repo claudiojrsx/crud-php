@@ -1,8 +1,8 @@
-<?php
+<?php require_once 'config.php';
 
 class Conexao {
     public static function usarConexao() {
-        $conexao = new PDO ('mysql:host=localhost;dbname=dbalunos', 'root', 'root');
+        $conexao = new PDO (DB_DRIVE . ':host=' . DB_HOSTNAME . ';dbname='. DB_DATABASE, DB_USERNAME, DB_PASSWORD);
         return $conexao;
     }
 }

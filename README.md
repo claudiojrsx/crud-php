@@ -12,9 +12,14 @@ Desenvolvimento de um simples projeto CRUD (Cadastro de Alunos) utilizando o ace
 ## Configuração do Projeto:
 
 - Executar a query dbalunos.sql ou importar o arquivo no MySQL Workbench para criar a table necessária.
-- Editar o arquivo **Conexao.php - que se encontra na pasta controller**
+- Editar o arquivo **config.php - que se encontra na pasta controller**
 
 ```
-$conexao = new PDO ('mysql:host=localhost;dbname=dbalunos', 'seuLogin', 'suaSenha');
+    define('DB_DRIVE', 'mysql');
+    define('DB_HOSTNAME', 'localhost');
+    define('DB_DATABASE', 'dbalunos');
+    define('DB_USERNAME', 'seuLogin');
+    define('DB_PASSWORD', 'suaSenha');
+
 
 ```
