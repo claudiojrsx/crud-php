@@ -1,5 +1,5 @@
 <?php 
-    require_once 'controller/Banco.php'; 
+    require_once 'global.php'; 
     
     $criar = new Banco();
     $nome = $_POST['nome'];

@@ -1,8 +1,12 @@
 <?php 
-    require_once 'controller/Banco.php';
+    require_once 'global.php';
     
-    $banco = new Banco();
-    $lista = $banco->listar();
+    try {
+        $banco = new Banco();
+        $lista = $banco->listar();
+    } catch (Exception $e) {
+        Erro::errorHandling($e);
+    }
 ?>
 
 <!DOCTYPE html>

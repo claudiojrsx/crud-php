@@ -1,8 +1,13 @@
 <?php 
-    require_once 'controller/Banco.php';
+    require_once 'global.php';
 
-    $id = $_GET['id'];
-    $banco = new Banco($id);
+    try {
+        $id = $_GET['id'];
+        $banco = new Banco($id);
+    } catch (Exception $e) {
+        Erro::errorHandling($e);
+    }
+    
 ?>
 
 <!DOCTYPE html>

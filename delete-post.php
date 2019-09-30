@@ -1,4 +1,4 @@
-<?php require_once 'controller/Banco.php'; ?>
+<?php require_once 'global.php'; ?>
 
 <?php
 

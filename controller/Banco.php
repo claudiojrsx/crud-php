@@ -1,5 +1,5 @@
 <?php
-require_once 'Conexao.php';
+require_once 'global.php';
 
 class Banco {
 

@@ -14,6 +14,7 @@ PRIMARY KEY(id) );
 INSERT INTO tbalunos (nome, datnasc, serie, escola, sexo)
 VALUES ("Claudio Ramalho", "1993-11-12", "8º Semestre", "Unip - Rangel Pestana", "Masculino"),
 ("Batman", "1939-03-30", "10º Semestre", "Gotham City", "Masculino"),
-("Wonder Woman", "1984-11-12", "9º Semestre", "Themyscira", "Feminino");
+("Wonder Woman", "1984-11-12", "9º Semestre", "Themyscira", "Feminino"),
+("The Killers", "2001-11-12", "11º Semestre", "Harvard", "Masculino");
 
 SELECT * FROM tbalunos;
