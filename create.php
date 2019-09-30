@@ -21,7 +21,7 @@
                 <input type="text" class="form-control" name="nome" placeholder="Nome *">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="datnasc" placeholder="Data de Nascimento *">
+                <input type="date" class="form-control" name="datnasc" placeholder="Data de Nascimento *">
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" name="serie" placeholder="Série *">

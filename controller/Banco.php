@@ -12,8 +12,7 @@ class Banco {
         }
     }
 
-    public function listar()
-    {
+    public function listar() {
         $query = "SELECT * FROM tbalunos";
         $conexao = Conexao::usarConexao();
         $resultado = $conexao->query($query);

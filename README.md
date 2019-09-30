@@ -15,6 +15,6 @@ Desenvolvimento de um simples projeto CRUD (Cadastro de Alunos) utilizando o ace
 - Editar o arquivo **Conexao.php - que se encontra na pasta controller**
 
 ```
-$conexao = new PDO ('mysql:host=localhost;dbname=dbalunos', 'suaSenha', 'suaSenha');
+$conexao = new PDO ('mysql:host=localhost;dbname=dbalunos', 'seuLogin', 'suaSenha');
 
 ```
