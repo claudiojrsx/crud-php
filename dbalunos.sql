@@ -12,9 +12,9 @@ sexo	VARCHAR(15),
 PRIMARY KEY(id) );
 
 INSERT INTO tbalunos (nome, datnasc, serie, escola, sexo)
-VALUES ("Claudio Ramalho", "1993-11-12", "8º Semestre", "Unip - Rangel Pestana", "Masculino"),
-("Batman", "1939-03-30", "10º Semestre", "Gotham City", "Masculino"),
-("Wonder Woman", "1984-11-12", "9º Semestre", "Themyscira", "Feminino"),
-("The Killers", "2001-11-12", "11º Semestre", "Harvard", "Masculino");
+VALUES ("Claudio Ramalho", "1993-11-12", "8ª Semestre", "Unip - Rangel Pestana", "Masculino"),
+("Batman", "1939-03-30", "9ª Série", "Gotham City", "Masculino"),
+("Wonder Woman", "1984-11-12", "5ª Série", "Themyscira", "Feminino"),
+("The Killers", "2001-11-12", "4ª Série", "Harvard", "Masculino");
 
 SELECT * FROM tbalunos;

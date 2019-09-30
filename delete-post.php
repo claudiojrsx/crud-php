@@ -2,9 +2,13 @@
 
 <?php
 
-    $id = $_GET['id'];
-    $excluir = new Banco($id);
+    try {
+        $id = $_GET['id'];
+        $excluir = new Banco($id);
 
-    $excluir->delete();
+        $excluir->delete();
 
-    header('Location: index.php');
+        header('Location: index.php');
+    } catch (Exception $e) {
+        Erro:errorHandling($e);
+    }

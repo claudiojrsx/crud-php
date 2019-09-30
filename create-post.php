@@ -1,22 +1,26 @@
 <?php 
     require_once 'global.php'; 
     
-    $criar = new Banco();
-    $nome = $_POST['nome'];
-    $criar->nome = $nome;
+    try {
+        $criar = new Banco();
+        $nome = $_POST['nome'];
+        $criar->nome = $nome;
 
-    $data = $_POST['datnasc'];
-    $criar->datnasc = $data;
+        $data = $_POST['datnasc'];
+        $criar->datnasc = $data;
 
-    $serie = $_POST['serie'];
-    $criar->serie = $serie;
+        $serie = $_POST['serie'];
+        $criar->serie = $serie;
 
-    $escola = $_POST['escola'];
-    $criar->escola = $escola;
+        $escola = $_POST['escola'];
+        $criar->escola = $escola;
 
-    $sexo = $_POST['sexo'];
-    $criar->sexo = $sexo;
+        $sexo = $_POST['sexo'];
+        $criar->sexo = $sexo;
 
-    $criar->inserir();
+        $criar->inserir();
 
-    header('Location: index.php');
+        header('Location: index.php');
+    } catch (Exception $e) {
+        Erro::errorHandling($e);
+    }
